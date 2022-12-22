@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: black;
+  background-color: rgb(247, 247, 247);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 5px 10px gainsboro;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2em;
+}
+
+.navbar h1 {
+  margin-left: 1em;
+  color: #2d99f1;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 5px gainsboro;
+}
+
+.items h2 {
+  margin: 1em 0 0 1em;
+}
+
+.items h3 {
+  color: #2d99f1;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 1em 1.7em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.buttons button {
+  color: #2d99f1;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  width: 6em;
+}
+
+.buttons span {
+  color: rgb(45, 153, 241, 0.3);
+}
+
+.add-book {
+  margin: 1em 0 0 2.2em;
+}
+
+.add-book h2 {
+  color: rgb(128, 128, 128, 0.7);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-book #title {
+  padding: 0.8em;
+  width: 30em;
+  border: 1px solid rgb(220, 220, 220);
+  font-family: "Poppins", sans-serif;
+  margin-right: 2em;
+  border-radius: 0.5em;
+}
+
+.add-book #author {
+  padding: 0.8em;
+  width: 10em;
+  border: 1px solid #dcdcdc;
+  font-family: "Poppins", sans-serif;
+  margin-right: 2em;
+  border-radius: 0.5em;
+}
+
+.add-book button {
+  border: none;
+  background-color: #2d99f1;
+  color: white;
+  border-radius: 0.5em;
+  width: 10em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+#line {
+  margin-top: 3em;
+  border: 1px solid rgb(220, 220, 220, 0.5);
+}
+
+.categories button {
+  border: none;
+  background-color: #2d99f1;
+  color: white;
+  border-radius: 0.5em;
+  width: 10em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin: 3em;
+  padding: 0.5em;
+  font-size: 1em;
+}
