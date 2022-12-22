@@ -10,9 +10,9 @@ const root = createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/bookstore" element={<Navbar />}>
+      <Route path="/" element={<Navbar />}>
         <Route index element={<Books />} />
-        <Route path="/bookstore/Categories" element={<Categories />} />
+        <Route path="/Categories" element={<Categories />} />
       </Route>
     </Routes>
   </BrowserRouter>,
