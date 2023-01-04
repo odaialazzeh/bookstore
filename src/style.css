@@ -37,6 +37,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 2em;
+  background-color: white;
+  box-shadow: 5px 5px 5px gainsboro;
+  border-radius: 0.5em;
+  padding: 1em;
 }
 
 .items {
@@ -44,8 +48,6 @@ body {
   flex-direction: column;
   background-color: white;
   padding: 1em;
-  border-radius: 0.5em;
-  box-shadow: 5px 5px 5px gainsboro;
 }
 
 .items h2 {
@@ -122,8 +124,8 @@ body {
 }
 
 #line {
-  margin-top: 3em;
   border: 1px solid rgb(220, 220, 220, 0.5);
+  margin: 0 2.5em;
 }
 
 .categories button {
