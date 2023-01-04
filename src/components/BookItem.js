@@ -1,24 +1,37 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
-const Bookitem = () => {
-  const state = {
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
+const Bookitem = ({ book }) => {
+  const dispatch = useDispatch();
+
+  const handleRemove = (e) => {
+    e.preventDefault();
+    dispatch(removeBook(book.id));
   };
 
   return (
     <div className="items">
-      <h2>{state.title}</h2>
-      <h3>{state.author}</h3>
+      <h2>{book.bookTitle}</h2>
+      <h3>{book.bookAuthor}</h3>
       <div className="buttons">
-        <button type="button">Comments </button>
+        <button type="button">Comments</button>
         <span> | </span>
-        <button type="button">Remove </button>
+        <button type="button" onClick={handleRemove}>Remove</button>
         <span> | </span>
-        <button type="button">Edit </button>
+        <button type="button">Edit</button>
       </div>
     </div>
   );
+};
+
+Bookitem.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    bookTitle: PropTypes.string.isRequired,
+    bookAuthor: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Bookitem;
