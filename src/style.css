@@ -43,6 +43,12 @@ body {
   padding: 1em;
 }
 
+.book #head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
 .items {
   display: flex;
   flex-direction: column;
