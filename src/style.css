@@ -4,6 +4,14 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   color: black;
+  background-color: rgb(214, 218, 221);
+}
+
+#root {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.2);
+  margin: 5em 3em;
+  padding-bottom: 10em;
+  border-radius: 0.5em;
   background-color: rgb(247, 247, 247);
 }
 
@@ -14,6 +22,7 @@ body {
   align-items: center;
   background-color: white;
   box-shadow: 5px 5px 10px gainsboro;
+  border-radius: 0.5em 0.5em  0 0;
 }
 
 .navbar ul {
@@ -37,8 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 2em;
-  background-color: white;
-  box-shadow: 5px 5px 5px gainsboro;
   border-radius: 0.5em;
   padding: 1em;
 }
@@ -49,22 +56,38 @@ body {
   font-size: 2em;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid rgb(220, 220, 220, 0.7);
+  border-radius: 0.3em;
+}
+
 .items {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 1em;
 }
 
 .items h2 {
-  margin: 1em 0 0 1em;
+  margin: 0 0 0 0.9em;
 }
 
 .items h3 {
   color: #2d99f1;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: normal;
-  margin: 0 0 1em 1.7em;
+  margin: 0 0 1em 1.9em;
+}
+
+.items h4 {
+  margin: 0 0 0 1.9em;
+  color: #808080b3;
+  font-size: 0.8em;
 }
 
 .buttons {
@@ -81,6 +104,7 @@ body {
   border: none;
   cursor: pointer;
   font-weight: 500;
+  font-size: 0.8em;
   width: 6em;
 }
 
@@ -127,6 +151,7 @@ body {
   width: 10em;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  margin-right: 1em;
 }
 
 #line {
@@ -145,4 +170,50 @@ body {
   margin: 3em;
   padding: 0.5em;
   font-size: 1em;
+}
+
+.categories h2 {
+  margin: 1em 0 0 2.5em;
+}
+
+.percentage {
+  width: 5.5em;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress button {
+  border: none;
+  background-color: #2d99f1;
+  color: white;
+  border-radius: 0.5em;
+  width: 10em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.progress h4 {
+  color: #808080;
+  font-weight: lighter;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.progress h3 {
+  color: black;
+  font-weight: normal;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.VLine {
+  border-left: 2px solid rgb(220, 220, 220, 0.5);
+  height: 5em;
+  margin: 0 2em;
 }
