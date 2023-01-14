@@ -7,7 +7,7 @@ const Navbar = () => (
       <h1>Bookstore CMS</h1>
       <ul>
         <li>
-          <Link to="/">BOOKS</Link>
+          <Link to="/bookstore">BOOKS</Link>
         </li>
         <li>
           <Link to="/CATEGORIES">CATEGORIES</Link>
